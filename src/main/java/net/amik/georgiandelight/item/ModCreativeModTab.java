@@ -1,5 +1,6 @@
 package net.amik.georgiandelight.item;
 
+import net.minecraft.core.NonNullList;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 
@@ -9,5 +10,6 @@ public class ModCreativeModTab {
         public ItemStack makeIcon() {
             return new ItemStack(ModItems.KHACHAPURI.get());
         }
+
     };
 }
