@@ -12,9 +12,9 @@ displayName="Georgian Delight" #mandatory
 
 logoFile="logo.png" #optional
 
-credits="This add-on was made possible thanks to Java, Mojang and Farmer`s delight team" #optional
+credits="This add-on was made possible thanks to Java, Mojang and Farmer`s delight team. Also big thanks to KaupenJoe." #optional
 
-authors="amik - code, ballparkCanoe61 - textures, models" #optional
+authors="amik - code, textures, CeoOfGoogle - models" #optional
 
 description='''
 This mod is an add-on for Farmer`s delight mod.

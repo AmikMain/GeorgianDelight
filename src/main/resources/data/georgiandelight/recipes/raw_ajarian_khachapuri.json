@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " e ",
+    " ce",
     "dWd"
   ],
   "key": {
@@ -13,6 +13,9 @@
     },
     "e": {
       "item": "minecraft:egg"
+    },
+    "c": {
+      "item": "georgiandelight:sulguni_slice"
     }
   },
   "result": {
