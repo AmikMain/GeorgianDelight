@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "georgiandelight:block/cheese_basin" },
+    "facing=east": { "model": "georgiandelight:block/cheese_basin", "y": 90 },
+    "facing=south": { "model": "georgiandelight:block/cheese_basin", "y": 180 },
+    "facing=west": { "model": "georgiandelight:block/cheese_basin", "y": 270 }
+  }
+}

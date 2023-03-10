@@ -1,0 +1,47 @@
+
+modLoader="javafml" #mandatory
+loaderVersion="[40,)"
+license="All rights reserved"
+
+[[mods]] #mandatory
+modId="georgiandelight" #mandatory
+
+version="1.18.2-0.0.1" #mandatory
+
+displayName="Georgian Delight" #mandatory
+
+logoFile="logo.png" #optional
+
+credits="This add-on was made possible thanks to Java, Mojang and Farmer`s delight team. Also big thanks to KaupenJoe." #optional
+
+authors="amik - code, textures, CeoOfGoogle - models" #optional
+
+description='''
+This mod is an add-on for Farmer`s delight mod.
+It adds Georgian cuisine - cuisine of the country which is author`s motherland/fatherland!
+'''
+
+
+[[dependencies.georgiandelight]]
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+
+    versionRange="[40,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+
+
+[[dependencies.georgiandelight]]
+    modId="minecraft"
+    mandatory=true
+
+    versionRange="[1.18.2,1.19)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.abnormals_delight]]
+modId = "farmersdelight"
+mandatory = true
+versionRange = "[1.1.2,)"
+ordering = "AFTER"
+side = "BOTH"

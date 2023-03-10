@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "georgiandelight:raw_ajarian_khachapuri"
+  },
+  "result": "georgiandelight:ajarian_khachapuri",
+  "experience": 0.35,
+  "cookingtime": 200
+}

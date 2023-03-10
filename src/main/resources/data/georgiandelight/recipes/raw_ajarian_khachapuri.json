@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " ce",
+    "dWd"
+  ],
+  "key": {
+    "W": {
+      "item": "farmersdelight:wheat_dough"
+    },
+    "d": {
+      "item": "georgiandelight:piece_of_dough"
+    },
+    "e": {
+      "item": "minecraft:egg"
+    },
+    "c": {
+      "item": "georgiandelight:sulguni_slice"
+    }
+  },
+  "result": {
+    "item": "georgiandelight:raw_ajarian_khachapuri"
+  }
+}
