@@ -12,7 +12,7 @@ public class ModBlockEntities {
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES =
             DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES, GeorgianDelight.MOD_ID);
 
-    public static final RegistryObject<BlockEntityType<CheeseBasinBlockEntity>> CHEESE_BASIN =
+    public static final RegistryObject<BlockEntityType<CheeseBasinBlockEntity>> CHEESE_BASIN_BLOCK_ENTITY =
             BLOCK_ENTITIES.register("cheese_basin", () -> BlockEntityType.Builder.of
                     (CheeseBasinBlockEntity::new, ModBlocks.CHEESE_BASIN.get()).build(null));
 

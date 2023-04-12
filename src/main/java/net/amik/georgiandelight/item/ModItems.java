@@ -8,8 +8,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModItems {
-    public static final DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, GeorgianDelight.MOD_ID);
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, GeorgianDelight.MOD_ID);
+
 
     public static final RegistryObject<Item> KHACHAPURI = ITEMS.register("khachapuri",
             () -> new Item(new Item.Properties().tab(ModCreativeModTab.GEORGIAN_DELIGHT_TAB)));
@@ -28,9 +28,6 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModTab.GEORGIAN_DELIGHT_TAB)));
 
     public static final RegistryObject<Item> PIECE_OF_DOUGH = ITEMS.register("piece_of_dough",
-            () -> new Item(new Item.Properties().tab(ModCreativeModTab.GEORGIAN_DELIGHT_TAB)));
-
-    public static final RegistryObject<Item> HOT_MILK_BUCKET = ITEMS.register("hot_milk_bucket",
             () -> new Item(new Item.Properties().tab(ModCreativeModTab.GEORGIAN_DELIGHT_TAB)));
 
     public static void register(IEventBus eventBus){

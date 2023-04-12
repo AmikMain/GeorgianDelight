@@ -83,8 +83,8 @@ public class CheeseBasinBlock extends BaseEntityBlock {
     }
 
 
-    public CheeseBasinBlock(Properties p_49795_) {
-        super(p_49795_);
+    public CheeseBasinBlock(Properties properties) {
+        super(properties);
     }
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
@@ -140,13 +140,13 @@ public class CheeseBasinBlock extends BaseEntityBlock {
 
     @Nullable
     @Override
-    public BlockEntity newBlockEntity(BlockPos p_153215_, BlockState p_153216_) {
-        return new CheeseBasinBlockEntity(p_153215_, p_153216_);
+    public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
+        return new CheeseBasinBlockEntity(pPos, pState);
     }
 
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level pLevel, BlockState pState, BlockEntityType<T> pType) {
-        return createTickerHelper(pType, ModBlockEntities.CHEESE_BASIN.get(), CheeseBasinBlockEntity::tick);
+        return createTickerHelper(pType, ModBlockEntities.CHEESE_BASIN_BLOCK_ENTITY.get(), CheeseBasinBlockEntity::tick);
     }
 }

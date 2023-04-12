@@ -4,6 +4,9 @@ import com.mojang.logging.LogUtils;
 import net.amik.georgiandelight.block.ModBlocks;
 import net.amik.georgiandelight.block.entity.ModBlockEntities;
 import net.amik.georgiandelight.item.ModItems;
+import net.amik.georgiandelight.screen.CheeseBasinScreen;
+import net.amik.georgiandelight.screen.ModMenuTypes;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Block;
@@ -29,7 +32,7 @@ import java.util.stream.Collectors;
 public class GeorgianDelight
 {
     public static final String MOD_ID = "georgiandelight";
-    // Directly reference a slf4j logger
+
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public GeorgianDelight()
@@ -39,11 +42,16 @@ public class GeorgianDelight
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
         ModBlockEntities.register(eventBus);
+        ModMenuTypes.register(eventBus);
+
 
         MinecraftForge.EVENT_BUS.register(this);
+        eventBus.addListener(this::clientSetup);
     }
     private void clientSetup(final FMLClientSetupEvent event) {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CHEESE_BASIN.get(), RenderType.cutout());
+
+        MenuScreens.register(ModMenuTypes.CHEESE_BASIN_MENU.get(), CheeseBasinScreen::new);
     }
 
     private void setup(final FMLCommonSetupEvent event) {
